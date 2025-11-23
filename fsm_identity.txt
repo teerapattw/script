@@ -7,3 +7,6 @@ echo "<134>Aug 25 2024 18:06:35: %ASA-6-713228: Group = RANDOM, Username = vpn03
 echo "<86>Aug 25 18:10:37 Linux01 sshd[3566235]: Accepted password for root from 10.10.100.11 port 54580 ssh2" | nc 192.168.20.8 -u 514
 echo "<86>Aug 25 18:10:37 Linux01 sshd[3566235]: Accepted password for root from 10.10.100.12 port 54580 ssh2" | nc 192.168.20.8 -u 514
 echo "<86>Aug 25 18:10:37 Linux01 sshd[3566235]: Accepted password for root from 10.10.100.13 port 54580 ssh2" | nc 192.168.20.8 -u 514
+
+##Network Connection from VPN pool IP address##
+echo "<134>Jan 17 2013 18:00:24: %ASA-6-302013: Built inbound TCP connection 69984523 for outside:10.10.100.11/17964 (10.10.100.10/17964) to outside:10.1.2.201/7900 (10.1.2.201/7900)" | nc 192.168.20.8 -u 514
