@@ -1,7 +1,7 @@
 ##VPN Login##
-echo "<134>Aug 25 2024 18:06:35: %ASA-6-713228: Group = RANDOM, Username = vpn01, IP = 184.22.9.162, Assigned private IP address 192.168.20.8 to remote user" | nc 10.0.1.5 -u 514
-echo "<134>Aug 25 2024 18:06:35: %ASA-6-713228: Group = RANDOM, Username = vpn02, IP = 184.22.9.162, Assigned private IP address 192.168.20.8 to remote user" | nc 10.0.1.5 -u 514
-echo "<134>Aug 25 2024 18:06:35: %ASA-6-713228: Group = RANDOM, Username = vpn03, IP = 184.22.9.162, Assigned private IP address 192.168.20.8 to remote user" | nc 10.0.1.5 -u 514
+echo "<134>Aug 25 2024 18:06:35: %ASA-6-713228: Group = RANDOM, Username = vpn01, IP = 184.22.9.162, Assigned private IP address 10.10.100.11 to remote user" | nc 192.168.20.8 -u 514
+echo "<134>Aug 25 2024 18:06:35: %ASA-6-713228: Group = RANDOM, Username = vpn02, IP = 184.22.9.162, Assigned private IP address 10.10.100.12 to remote user" | nc 192.168.20.8 -u 514
+echo "<134>Aug 25 2024 18:06:35: %ASA-6-713228: Group = RANDOM, Username = vpn03, IP = 184.22.9.162, Assigned private IP address 10.10.100.13 to remote user" | nc 192.168.20.8 -u 514
 
 ##SSH login from VPN pool IP address##
 echo "<86>Aug 25 18:10:37 Linux01 sshd[3566235]: Accepted password for root from 10.10.100.11 port 54580 ssh2" | nc 192.168.20.8 -u 514
